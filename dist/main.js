@@ -274,7 +274,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"precision highp float;\\nuniform sampler2D velocity;\\nvarying vec2 uv;\\n\\nvoid main(){\\n    vec2 vel = texture2D(velocity, uv).xy;\\n    float len = length(vel);\\n    vel = vel * 0.5 + 0.5;\\n    \\n    vec3 color = vec3(vel.x, vel.y, 1.0);\\n    color = mix(vec3(0), color, len);\\n\\n    gl_FragColor = vec4(color,  1.0);\\n}\\n\");\n\n//# sourceURL=webpack:///./js/modules/glsl/sim/color.frag?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"precision highp float;\\nuniform sampler2D velocity;\\nvarying vec2 uv;\\n\\nvoid main(){\\n    vec2 vel = texture2D(velocity, uv).xy;\\n    float len = length(vel);\\n    vel = vel * 0.5 + 0.5;\\n    \\n    vec3 color = vec3(vel.x, vel.y, 1.0);\\n    color = mix(vec3(0.0, 0.0, 0.0), color, len);\\n\\n    gl_FragColor = vec4(color,  1.0);\\n}\\n\");\n\n//# sourceURL=webpack:///./js/modules/glsl/sim/color.frag?");
 
 /***/ }),
 
