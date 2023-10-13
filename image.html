@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Base64 Image</title>
+</head>
+<body>
+    <img id="base64Image" src="" alt="Base64 Image">
+    <script>
+        // Your Base64-encoded data
+        var base64Data = "iVBORw0KGgoAAAANSUhEUgAAAgAAAAABCAYAAACouxZ2AAAAAXNSR0IArs4c6QAAAR5JREFUSEvtVNl1xEAIE/Sw/beQBjPkcZm5c30m/sHsCIHEeOn1ehMiQj4igv/87/gBCMACUMTnvYFYICQWn/PEUQMYAE24hUtxXr/nKx7Dsd4/gWgc+hbPlY/bomXsO/V79MR83GCfg/JsdedcB56uxvu6P6t/6Yeeu4+pf92F1jvuzBfz2PzzLvv+4950/2ZZym2/ycV5bAUdz5ybnFufjkdxLj/m/Eaude8dXv/bfsJj/pz6HnToCrIur+SVZ6cv5v3Ur4Ofpl+v1ZlHP38BoxFDQBCLmpNFIUKLuMVlTeDbloNRv3uPHlc9vo7LWZPnxHfHRb9BX+nu9bo/7sfgT+h9zjOfYs1RHKMPoy/uee1k9a/fzQ1XO5376cwfQQkCZ3rauhMAAAAASUVORK5CYII=";
+
+        // Create a data URL for the image
+        var imageUrl = "data:image/png;base64," + base64Data;
+
+        // Set the image source
+        var imgElement = document.getElementById("base64Image");
+        imgElement.src = imageUrl;
+    </script>
+</body>
+</html>
